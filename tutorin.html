@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<!-- CSS-TIP: whenever using padding and width always specify box-sizing: border-box -->
+<html>
+<head>
+<style>
+    .main-pg{
+        position:absolute;
+        margin: 20px 50px;
+        padding:20px 30px;
+        border:1px solid gray;
+        box-shadow: 2px 3px 3px #888;
+    }
+    .main-container{
+        position:relative;
+        width: 90%;
+        margin:50px auto;
+    }
+    .call-out-bar{
+        padding:10px 20px;
+        text-align: justify;
+        width:45%;
+        box-sizing: border-box;     
+    }
+    @media(min-width: 600px){
+        .main-container{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .call-out-bar:nth-child(1) { background-color: #c0c0c0;}
+    .call-out-bar:nth-child(2) { background-color: #f1f1f1;}
+    .call-out-bar:nth-child(3) { background-color: #d0f0a2;}
+    
+    .fullbg{
+        
+            background: 
+            linear-gradient(
+              rgba(0, 0, 0, 0.2),
+              rgba(0, 0, 0, 0.2)
+            ),
+             url(content/images/experttutor.jpeg);
+            opacity: 1.0;
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+      .mid span {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+        }
+        .mid span h2{
+            text-transform: uppercase;
+          font-family: sans-serif;
+          font-weight: 900;
+          color: white;
+          font-size: 2rem;
+          width: 100%;
+          text-align: center;
+        }
+        .mid span p{
+          font-family: 'New Times Roman';
+          font-weight: 600;
+          color: white;
+          font-size: 2rem;
+          width: 100%;
+          text-align: center;
+        }
+</style>
+</head>
+
+<body>
+
+    <div class="main-pg">
+        
+        <div class="fullbg">
+            <div class="mid">
+                <span>
+                <p>Get Started Today</p>
+                    <br/>
+                <h2>Maths, Physics, Chemistry, Statistics &amp; Science tuition</h2>
+                    <br/>
+                    <h2>For grades 7 to 12</h2>
+                    <br/>
+                    <p>Calgary, Alberta</p>
+                </span>
+            </div>
+        </div>
+        
+        <div class="main-container">
+        
+            <div class="call-out-bar">
+                <h2>What is Lorem Ipsum?</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+
+            <div class="call-out-bar">
+                <h2>What is Lorem Ipsum?</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div>
+
+            <!--div class="call-out-bar">
+                <h2>What is Lorem Ipsum?</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </div-->
+        </div>
+    </div>
+    
+</body>
+</html>

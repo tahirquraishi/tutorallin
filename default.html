@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+    <!-- https://www.w3schools.com/howto/howto_css_bg_change_scroll.asp -->
+    <head>
+        <title>Tutor All In</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charm" />
+        <link rel="stylesheet" href="content/bootstrap-4.2.1-dist/css/bootstrap.min.css" type="text/css"/>
+                
+        <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+        }
+        img{
+            border-radius: 10px;
+            opacity: 1.0;
+            height:200px;
+            width:250px;
+            cursor: pointer;
+        }
+        img:hover{
+            opacity: 1.0;
+            box-shadow: 0 0 2px 1px rgb(0, 140, 135, 0.5);
+        }
+        .fullbg{
+            background: 
+            linear-gradient(
+              rgba(0, 0, 0, 0.6),
+              rgba(0, 0, 0, 0.6)
+            ),
+             url(content/images/experttutor.jpeg);
+            opacity: 1.0;
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+            
+        .header1{
+            background: 
+            linear-gradient(
+              rgba(0, 0, 0, 0.4),
+              rgba(0, 0, 0, 0.4)
+            ),
+             url(content/images/math-banner.jpg);
+            opacity: 1.0;
+            height: 100%;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+                   
+       
+        .columnPanel h2{
+            width:300px;
+            height: 120px;
+            background-color: navy;
+            color: white;
+            font-family: fantasy;
+        }
+        
+        
+        .mid span {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+        }
+        .mid span h2{
+            text-transform: uppercase;
+          font-family: sans-serif;
+          font-weight: 900;
+          color: white;
+          font-size: 2rem;
+          width: 100%;
+          text-align: center;
+        }
+        .mid span p{
+          font-family: 'Charm';
+          font-weight: 400;
+          color: white;
+          font-size: 2.5rem;
+          width: 100%;
+          text-align: center;
+        }
+   
+            
+        .main-container{
+            position:relative;
+            width: 90%;
+            margin:50px auto;
+        }
+        .call-out-bar{
+            padding:10px 20px;
+            text-align: justify;
+            width:45%;
+            box-sizing: border-box;  
+            border:1px solid lightgray;
+            box-shadow: 1px 2px 3px 2px lightblue;
+        }
+        @media(min-width: 600px){
+            .main-container{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    /*.call-out-bar:nth-child(1) { background-color: #c0c0c0;}
+    .call-out-bar:nth-child(2) { background-color: #f1f1f1;}
+    .call-out-bar:nth-child(3) { background-color: #d0f0a2;}*/
+            
+    .call-out-bar > h2{
+        padding: 10px 5px;
+        background-color: navy;
+        color:white;
+        font-family: sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        height: 75px;
+        text-align: center;
+    }
+    .single-allout-box{
+        font-family: 'Charm';
+        font-size: 20px;
+        flex: 1;
+    }
+        </style>
+    </head>
+    <body>
+                
+        <div class="fullbg">
+            <div class="mid">
+                <span>
+                <p>Get Started Today</p>
+                    <br/>
+                <h2>Maths, Physics, Chemistry, Statistics &amp; Science tuition</h2>
+                    <br/>
+                    <h2>For grades 7 to 12</h2>
+                    <br/>
+                    <p>Calgary, Alberta</p>
+                </span>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="single-allout-box" style="text-align:center;">
+                <h2>What do I Offer</h2>
+            </div>
+        </div>
+        <div class="main-container">
+        
+            <div class="call-out-bar">
+                <h2>One on One Tuition for Maths, Physics and Statistics</h2>
+                <p>
+                    <ul>
+                        <li>Help with assignments</li>
+                        <li>Practice exams</li>
+                        <li>Help with home work</li>
+                        <li>Help with home work</li>
+                    </ul>
+                </p>
+            </div>
+
+            <div class="call-out-bar">
+                <h2>Chemistry</h2>
+                <p>
+                    <ul>
+                        <li>Help with home work</li>
+                        <li>Help with home work</li>
+                        <li>Help with home work</li>
+                        <li>Help with home work</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+    <div class="main-container">
+        <div class="single-allout-box" style="text-align:center;">
+            <h3>I would be please to know how can I help you</h3>
+        </div>
+    </div>
+    <div class="container" style="width: 90%;border: 1px solid lightgray; box-shadow: 1px 2px 3px 2px lightblue;">
+        <form class="form-horizontal">
+            <div class="row" style="margin:10px 4px;">
+                <lable class="control-label col-sm-4" style="text-align:right;">Name:</lable>
+                <div class="col-md-4" style="text-align:left">
+                    <input type="text" class="form-control" id="txtName" placeholder="enter name"/>
+                </div>
+                <div class="col-sm-4">&nbsp;</div>
+            </div>
+            <div class="row" style="margin:10px 4px;">
+                <lable class="control-label col-sm-4" style="text-align:right;">Details:</lable>
+                <div class="col-md-8" style="text-align:left">
+                    <input type="text" class="form-control" id="txtName" placeholder="enter what subject you need help with"/>
+                </div>
+                
+            </div>
+            <div class="row" style="margin:10px 4px;">
+                <lable class="control-label col-sm-4" style="text-align:right;">Email:</lable>
+                <div class="col-md-6" style="text-align:left">
+                    <input type="email" class="form-control" id="txtName" placeholder="enter email"/>
+                </div>
+                <div class="col-sm-2">&nbsp;</div>
+            </div>
+            <div class="row" style="margin:10px 4px;">
+                <div class="col-sm-4">&nbsp;</div>
+                <div class="col-sm-1">
+                    <input type="button" id="btnSubmit" value="Submit" class="btn btn-primary"/>
+                </div>
+                <div class="col-sm-7">&nbsp;</div>
+            </div>
+        </form>
+    </div>
+    <div class="row">&nbsp;</div>
+    <div class="row">&nbsp;</div>
+    <div class="row">&nbsp;</div>
+    </body>
+</html>

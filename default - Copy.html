@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <!-- https://www.w3schools.com/howto/howto_css_bg_change_scroll.asp -->
+    <head>
+        <title>Tutor All In</title>
+        <link rel="stylesheet" href="content/bootstrap-4.2.1-dist/css/bootstrap.min.css" type="text/css"/>
+        
+        <style>
+        html, body{
+            height: 100%;
+            margin: 0;
+        }
+        img{
+            border-radius: 10px;
+            opacity: 1.0;
+            height:200px;
+            width:250px;
+            cursor: pointer;
+        }
+        img:hover{
+            opacity: 1.0;
+            box-shadow: 0 0 2px 1px rgb(0, 140, 135, 0.5);
+        }
+        .fullbg{
+            background: 
+            linear-gradient(
+              rgba(0, 0, 0, 0.2),
+              rgba(0, 0, 0, 0.2)
+            ),
+             url(content/images/experttutor.jpeg);
+            opacity: 1.0;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .fullbg1{
+            background-image: url(content/images/tutorWithPassion.jpeg);
+            opacity: 1.0;
+            height: 70%;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .fullbg2{
+            background-image: url(content/images/meetgoals.jpeg);
+            opacity: 1.0;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .fullbg3{
+            background-image: url(content/images/bestresults.jpeg);
+            opacity: 1.0;
+            height: 100%;
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .header{
+            
+            background-image: url(content/images/university.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 1000px
+            height: 200px;
+            opacity: 1.0;
+        }
+        .imgbox{
+            width:50%;
+            height:50%;
+            margin:0 auto;
+        };
+        .container {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: navy;
+            font-weight: bold;
+            font-size: 48px;
+        }
+        .mid span {
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+        }
+        .mid span h2{
+            text-transform: uppercase;
+          font-family: sans-serif;
+          font-weight: 900;
+          color: white;
+          font-size: 2rem;
+          width: 100%;
+          text-align: center;
+        }
+        .mid span p{
+          font-family: 'New Times Roman';
+          font-weight: 600;
+          color: white;
+          font-size: 2rem;
+          width: 100%;
+          text-align: center;
+        }
+        div.centered:hover{
+            color:navy;
+        }
+        </style>
+    </head>
+    <body>
+        <!--div class="header" style="height: 150px; width: 100%; text-align: center;">
+            <h3>tutoring for grades 7 to 12 available</h3>
+        </div-->
+        <div class="fullbg">
+            <div class="mid">
+                <span>
+                <p>Get Started Today</p>
+                    <br/>
+                <h2>Maths, Physics, Chemistry, Statistics &amp; Science tuition</h2>
+                    <br/>
+                    <h2>For grades 7 to 12</h2>
+                    <br/>
+                    <p>Calgary, Alberta</p>
+                </span>
+            </div>
+        </div>
+        <div class="fullbg3">
+            <div class="row">
+                <div class="col-md-6" style="background: transparent;text-align: center; padding:30px">
+                    <div>
+                        <img src="content/images/stats.jpg"/>
+                        <div class="centered">
+                            <h1>Statistics</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" style="background: transparent;text-align: center; padding:30px">
+                    <div>
+                        <img src="content/images/chemistry.jpg"/>
+                        <div class="centered">
+                            <h1>Chemistry</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" style="background: transparent;text-align: center; padding:30px">
+                    <div>
+                        <img src="content/images/mathematics.jpg"/>
+                        <div class="centered">
+                            <h1>Mathematics</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" style="background: transparent;text-align: center; padding:30px">
+                    <img src="content/images/science.png"/>
+                    <div class="centered">
+                        <h1>Science</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="fullbg1">
+            <div class="row">
+                <div class="col-md-6" style="background: transparent;text-align: center; padding:30px">
+                    <div>
+                        <img src="content/images/mathematics.jpg"/>
+                        <div class="centered">
+                            <h1>Mathematics</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" style="background: transparent;text-align: center; padding:30px">
+                    <img src="content/images/science.png"/>
+                    <div class="centered">
+                        <h1>Science</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="fullbg2">
+            <div class="row">
+                <div class="col-md-6" style="background: transparent;text-align: center; padding:30px">
+                    <!--img src="content/images/stats.jpg" height="350" width="400" background="transparent"/-->
+                    <div class="centered">
+                        <h1>Statistics & Probability</h1>
+                    </div>
+                </div>
+                <div class="col-md-6" style="background: transparent;text-align: center; padding:30px">
+                    <!--img src="content/images/needhelp.jpeg" height="350" width="400"/-->
+                    <div class="centered">
+                        <h1>Having problem - need help</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
